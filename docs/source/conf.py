@@ -23,19 +23,19 @@ DESCRIPTION = (
 # -- Project information -----------------------------------------------------
 
 project = 'pyexcel'
-copyright = '2014-2022 Onni Software Ltd.'
+copyright = '2014-2024 Onni Software Ltd.'
 author = 'C.W.'
 # The short X.Y version
-version = '0.7.0'
+version = '0.7.1'
 # The full version, including alpha/beta/rc tags
-release = '0.7.0'
+release = '0.7.1'
 
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.autosummary', 'sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', 'sphinx.ext.viewcode', 'sphinxcontrib.excel', 'sphinx_copybutton']
+extensions = [    'sphinx.ext.autosummary',    'sphinx.ext.autodoc',    'sphinx.ext.doctest',    'sphinx.ext.intersphinx',    'sphinx.ext.viewcode',    'sphinxcontrib.excel',    'sphinx_copybutton',]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -58,7 +58,7 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -69,13 +69,13 @@ html_static_path = ['_static']
 # -- Options for intersphinx extension ---------------------------------------
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/3/': None}
+intersphinx_mapping = {'python': ('https://docs.python.org/3',
+                                  'python-inv.txt')}
 # TODO: html_theme not configurable upstream
 html_theme = 'default'
-
-
 def setup(app):
-    app.add_stylesheet('theme_overrides.css')
+    app.add_css_file('theme_overrides.css')
+
 
 
 # TODO: DESCRIPTION not configurable upstream
@@ -87,6 +87,6 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 intersphinx_mapping.update({
-    'xlrd': ('http://xlrd.readthedocs.io/en/latest/', None),
+    'xlrd': ('http://xlrd.readthedocs.io/en/latest/', None)
 })
 master_doc = "index"

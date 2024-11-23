@@ -8,9 +8,6 @@ pyexcel - Let you focus on data, instead of file formats
 .. image:: https://raw.githubusercontent.com/pyexcel/pyexcel-mobans/master/images/awesome-badge.svg
    :target: https://awesome-python.com/#specific-formats-processing
 
-.. image:: https://github.com/pyexcel/pyexcel/workflows/run_tests/badge.svg
-   :target: http://github.com/pyexcel/pyexcel/actions
-
 .. image:: https://codecov.io/gh/pyexcel/pyexcel/branch/master/graph/badge.svg
    :target: https://codecov.io/gh/pyexcel/pyexcel
 
@@ -19,6 +16,7 @@ pyexcel - Let you focus on data, instead of file formats
 
 .. image:: https://anaconda.org/conda-forge/pyexcel/badges/version.svg
    :target: https://anaconda.org/conda-forge/pyexcel
+
 
 .. image:: https://pepy.tech/badge/pyexcel/month
    :target: https://pepy.tech/project/pyexcel
@@ -41,18 +39,11 @@ Support the project
 ================================================================================
 
 If your company has embedded pyexcel and its components into a revenue generating
-product, please support me on github, `patreon <https://www.patreon.com/bePatron?u=5537627>`_
-or `bounty source <https://salt.bountysource.com/teams/chfw-pyexcel>`_ to maintain
-the project and develop it further.
+product, please support me on github, or `patreon <https://www.patreon.com/bePatron?u=5537627>`_
+maintain the project and develop it further.
 
-If you are an individual, you are welcome to support me too and for however long
-you feel like. As my backer, you will receive
-`early access to pyexcel related contents <https://www.patreon.com/pyexcel/posts>`_.
-
-And your issues will get prioritized if you would like to become my patreon as `pyexcel pro user`.
-
-With your financial support, I will be able to invest
-a little bit more time in coding, documentation and writing interesting posts.
+With your financial support, I will be able to invest a little bit more time in coding,
+documentation and writing interesting posts.
 
 
 Known constraints
@@ -587,8 +578,8 @@ Hence partial read feature is developed to read partial data into memory for
 processing. 
 
 You can paginate by row, by column and by both, hence you dictate what portion of the
-data to read back. But remember only row limit features help you save memory. You can
-use this feature to record data from Nth column, take M number of columns and skip
+data to read back. But remember only row limit features help you save memory. Let's
+you use this feature to record data from Nth column, take M number of columns and skip
 the rest. You are not going to reduce your memory footprint.
 
 Why did not I see above benefit?
@@ -1055,7 +1046,7 @@ Available Plugins
    ======================== ======================= =================
    Package name              Supported file formats  Dependencies
    ======================== ======================= =================
-   `pyexcel-io`_            csv, csvz [#f1]_, tsv,
+   `pyexcel-io`_            csv, csvz [#f1]_, tsv,  csvz,tsvz readers depends on `chardet`
                             tsvz [#f2]_
    `pyexcel-xls`_           xls, xlsx(read only),   `xlrd`_,
                             xlsm(read only)         `xlwt`_

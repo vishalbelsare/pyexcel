@@ -16,7 +16,7 @@ manipulate and write data in various excel formats. This library makes
 information processing involving excel files an enjoyable task. The data in
 excel files can be turned into :ref:`array or dict<a-list-of-data-structures>`
 with minimal code and vice versa. This library focuses on data
-processing using excel files as storage media hence fonts, colors and charts
+processing using excel files. Therefore, fonts, colors and charts
 were not and will not be considered.
 
 The idea originated from the common usability problem: when an excel file
@@ -36,18 +36,11 @@ Support the project
 ================================================================================
 
 If your company has embedded pyexcel and its components into a revenue generating
-product, please support me on github, `patreon <https://www.patreon.com/bePatron?u=5537627>`_
-or `bounty source <https://salt.bountysource.com/teams/chfw-pyexcel>`_ to maintain
-the project and develop it further.
+product, please support me on github, or `patreon <https://www.patreon.com/bePatron?u=5537627>`_
+maintain the project and develop it further.
 
-If you are an individual, you are welcome to support me too and for however long
-you feel like. As my backer, you will receive
-`early access to pyexcel related contents <https://www.patreon.com/pyexcel/posts>`_.
-
-And your issues will get prioritized if you would like to become my patreon as `pyexcel pro user`.
-
-With your financial support, I will be able to invest
-a little bit more time in coding, documentation and writing interesting posts.
+With your financial support, I will be able to invest a little bit more time in coding,
+documentation and writing interesting posts.
 
 
 Installation
@@ -200,7 +193,7 @@ For individual excel file formats, please install them as you wish:
    ======================== ======================= =================
    Package name              Supported file formats  Dependencies
    ======================== ======================= =================
-   `pyexcel-io`_            csv, csvz [#f1]_, tsv,
+   `pyexcel-io`_            csv, csvz [#f1]_, tsv,  csvz,tsvz readers depends on `chardet`
                             tsvz [#f2]_
    `pyexcel-xls`_           xls, xlsx(read only),   `xlrd`_,
                             xlsm(read only)         `xlwt`_
